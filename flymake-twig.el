@@ -31,7 +31,6 @@
                             (goto-char (point-min))
                             (cl-loop
                              while (search-forward-regexp
-                                    ;; "base.html.twig",4,Unexpected "}".
                                     "^\"\\(.*.twig\\)\",\\([0-9]+\\),\\(.*\\)$"
                                     nil t)
                              for msg = (match-string 3)
